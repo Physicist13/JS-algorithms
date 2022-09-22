@@ -21,11 +21,8 @@ module.exports = {
   },
 
   mode: 'development',
-
   devtool: 'source-map',
-
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    open: true,
+    static: path.join(__dirname, 'dist'),
   },
 };
